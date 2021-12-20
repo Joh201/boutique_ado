@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Category(models.Model):
+    # helper class to change the category name in admin to categories
     class Meta:
         verbose_name_plural = 'categories'
 
