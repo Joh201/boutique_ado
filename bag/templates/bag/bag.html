@@ -135,6 +135,7 @@
 {% endblock %}
 
 {% block postloadjs %}
+<!-- This prevents from overriding toast messages(block.super) -->
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 <script type="text/javascript">
